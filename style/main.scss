@@ -122,3 +122,50 @@ $uniqueFont: 'Source Sans Pro', sans-serif;
         }
     }
 }
+
+.shop {
+    @include bb(1px solid $secondaryColor);
+
+    .wrapper {
+        width: $sizePercent - 20% + 2;
+        @include setMargin(0, auto, 0, auto);
+        @include setPadding(0, 2%, 0, 2%);
+
+        .shop__title {
+            font-size: 4rem;
+            color: $secondaryColor;
+        }
+
+        .shop__blocks {
+            @include setFlex(flex, row, flex-start, flex-start);
+            @include setMargin(2%, 0, 5%, 0);
+
+            .shop__item {
+                width: $sizePercent / 2 - 2;
+                @include setFlex(flex, row, flex-start, center);
+
+                .basket {
+                    width: $sizePercent / 4 * 3 - 5;
+                    object-fit: contain;
+                }
+            }
+
+            .shop__item__text {
+                width: $sizePercent / 2 + 2;
+
+                .item__title {
+                    font-size: 2rem;
+                    color: $secondaryColor;
+                    @include setMargin(0, 0, 3%, 0);
+                }
+
+                .item__content {
+                    width: $sizePercent - 8%;
+                    font-size: 1.5rem;
+                    color: $secondaryColor;
+                    line-height: 3rem;
+                }
+            }
+        }
+    }
+}
