@@ -1,0 +1,39 @@
+@mixin setFlex ($dispFlex, $flexDir, $jusCon, $alItem) {
+    display: $dispFlex;
+    flex-direction: $flexDir;
+    justify-content: $jusCon;
+    align-items: $alItem;
+}
+
+@mixin setMargin ($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+@mixin setPadding ($topP, $rightP, $bottomP, $leftP) {
+    padding-top: $topP;
+    padding-right: $rightP;
+    padding-bottom: $bottomP;
+    padding-left: $leftP;
+}
+
+@mixin borderR ($br) {
+    border-radius: $br;
+}
+
+@mixin position ($pos) {
+    position: $pos;
+}
+
+@mixin way ($top, $right, $bottom, $left) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin bb ($bb) {
+    border-bottom: $bb;
+}

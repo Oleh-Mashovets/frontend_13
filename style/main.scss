@@ -1,0 +1,18 @@
+$sizePercent: 100%;
+$size: 100;
+$mainColor: #000;
+$primaryColor: #5094f2;
+$secondaryColor: #6c6c6c;
+$specialyColor: #d94748;
+$otherColor: #ebbb11;
+$addColor: #fff;
+$uniqueFont: 'Source Sans Pro', sans-serif;
+
+@import 'header'; 
+@import 'footer'; 
+@import 'mixin';
+
+@font-face {
+    font-family: MYRIADPRO-REGULAR;
+    src: url(../materials/MYRIADPRO-REGULAR.OTF);
+}
