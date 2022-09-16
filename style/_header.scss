@@ -61,3 +61,68 @@
         }
     }
 }
+
+
+
+@media screen and (max-width: 1250px){
+    .header {
+
+        .wrapper {
+            width: $sizePercent - 20% + 2;
+            @include setMargin(0, auto, 0, auto);
+            @include setPadding(0, 2%, 0, 2%);
+    
+            .nav {
+                @include setFlex(flex, row, space-between, center);
+                @include setPadding(2%, 7%, 1.5%, 0);
+    
+                .nav__logo {
+                    font-size: 2.6469rem;
+                    @include setFlex(flex, row, flex-start, flex-start);
+                    color: $mainColor;
+                   
+                    .unique {
+                        width: $size / 2 - 5 + px;
+                        height: $size / 5 + px;
+                        @include borderR (3.125rem);
+                        @include setFlex(flex, row, center, center);
+                        @include setPadding(15%, 5.5%, 0, 5.5%);
+                        background-color: $primaryColor;
+                        color: $addColor;
+                        font-family: $uniqueFont;
+                        font-size: 4.0219rem;
+                        @include setMargin(0, 10%, 0, 0);
+                    }
+                }
+    
+                .menu {
+                    width: $sizePercent / 3 + 2;
+                    @include setFlex(flex, row, space-between, center);
+    
+                    .menu__list {
+                        font-size: 1.2719rem;
+    
+                        .menu__link{
+                            color: $secondaryColor;
+                            @include position(relative);
+    
+                            &:hover:before {
+                                display: block;
+                            }
+                        }
+    
+                        .menu__link:before {
+                            display: none;
+                            content: "";
+                            width: $sizePercent;
+                            height: $size / 50 +1 + px;
+                            background-color: $primaryColor;
+                            @include position(absolute);
+                            @include way($size/5*2+7+px, 0, 0, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
