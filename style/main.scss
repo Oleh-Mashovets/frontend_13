@@ -16,3 +16,55 @@ $uniqueFont: 'Source Sans Pro', sans-serif;
     font-family: MYRIADPRO-REGULAR;
     src: url(../materials/MYRIADPRO-REGULAR.OTF);
 }
+
+.slider {
+    background-image: url(../images/bg.png);
+    background-size: cover;
+
+    .wrapper {
+        width: $sizePercent - 20% + 2;
+        @include setMargin(0, auto, 0, auto);
+        @include setPadding(0, 2%, 0, 2%);
+
+        .slider__blocks {
+            @include setFlex(flex, row, flex-start, flex-start);
+
+            .slider__item {
+                width: $sizePercent / 2;
+
+                .phone {
+                    width: $sizePercent / 5 * 4;
+                    object-fit: contain;
+                }
+
+                .title {
+                    font-size: 4rem;
+                    @include setPadding(25%, 0, 0, 0);
+                    color: $addColor;
+                }
+
+                .text {
+                    font-size: 2rem;
+                    @include setPadding(5%, 0, 7%, 0);
+                    color: $addColor;
+                    line-height: 4rem;
+                }
+
+                .sign {
+                    @include setMargin(0, 0, 0, 2%);
+                    width: $sizePercent / 3.6;
+                    @include setFlex(flex, row, space-around, center);
+                    background-color: $primaryColor;
+                    @include setPadding(1.5%, 1.5%, 1.5%, 1.5%);
+                    font-size: 2rem;
+                    color: $addColor;
+
+                    &:hover {
+                        background-color: $addColor;
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}

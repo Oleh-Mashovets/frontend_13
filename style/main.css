@@ -72,3 +72,61 @@
 @font-face {
   font-family: MYRIADPRO-REGULAR;
   src: url(../materials/MYRIADPRO-REGULAR.OTF); }
+.slider {
+  background-image: url(../images/bg.png);
+  background-size: cover; }
+  .slider .wrapper {
+    width: 82%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-top: 0;
+    padding-right: 2%;
+    padding-bottom: 0;
+    padding-left: 2%; }
+    .slider .wrapper .slider__blocks {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start; }
+      .slider .wrapper .slider__blocks .slider__item {
+        width: 50%; }
+        .slider .wrapper .slider__blocks .slider__item .phone {
+          width: 80%;
+          object-fit: contain; }
+        .slider .wrapper .slider__blocks .slider__item .title {
+          font-size: 4rem;
+          padding-top: 25%;
+          padding-right: 0;
+          padding-bottom: 0;
+          padding-left: 0;
+          color: #fff; }
+        .slider .wrapper .slider__blocks .slider__item .text {
+          font-size: 2rem;
+          padding-top: 5%;
+          padding-right: 0;
+          padding-bottom: 7%;
+          padding-left: 0;
+          color: #fff;
+          line-height: 4rem; }
+        .slider .wrapper .slider__blocks .slider__item .sign {
+          margin-top: 0;
+          margin-right: 0;
+          margin-bottom: 0;
+          margin-left: 2%;
+          width: 27.7777777778%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          background-color: #5094f2;
+          padding-top: 1.5%;
+          padding-right: 1.5%;
+          padding-bottom: 1.5%;
+          padding-left: 1.5%;
+          font-size: 2rem;
+          color: #fff; }
+          .slider .wrapper .slider__blocks .slider__item .sign:hover {
+            background-color: #fff;
+            color: #000; }
