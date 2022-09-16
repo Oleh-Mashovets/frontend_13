@@ -150,6 +150,16 @@
     font-size: 1.5rem;
     color: #6c6c6c; }
 
+@media screen and (max-width: 1250px) {
+  .footer {
+    padding-top: 2%;
+    padding-right: 0;
+    padding-bottom: 3%;
+    padding-left: 0;
+    text-align: center; }
+    .footer .wrapper .author {
+      font-size: .9594rem;
+      color: #6c6c6c; } }
 @font-face {
   font-family: MYRIADPRO-REGULAR;
   src: url(../materials/MYRIADPRO-REGULAR.OTF); }

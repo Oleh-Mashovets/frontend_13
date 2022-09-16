@@ -12,3 +12,20 @@
         }
     }
 }
+
+
+
+@media screen and (max-width: 1250px) {
+    .footer {
+        @include setPadding(2%, 0, 3%, 0);
+        text-align: center;
+    
+        .wrapper {
+    
+            .author {
+                font-size: .9594rem;
+                color: $secondaryColor;
+            }
+        }
+    }
+}
