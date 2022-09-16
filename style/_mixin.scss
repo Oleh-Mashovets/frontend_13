@@ -1,9 +1,13 @@
+// создаем mixin для упрощения кода со значениями для flex
+
 @mixin setFlex ($dispFlex, $flexDir, $jusCon, $alItem) {
     display: $dispFlex;
     flex-direction: $flexDir;
     justify-content: $jusCon;
     align-items: $alItem;
 }
+
+// создаем mixin для упрощения кода со значениями для margin
 
 @mixin setMargin ($top, $right, $bottom, $left) {
     margin-top: $top;
@@ -12,6 +16,8 @@
     margin-left: $left;
 }
 
+// создаем mixin для упрощения кода со значениями для padding
+
 @mixin setPadding ($topP, $rightP, $bottomP, $leftP) {
     padding-top: $topP;
     padding-right: $rightP;
@@ -19,13 +25,19 @@
     padding-left: $leftP;
 }
 
+// создаем mixin для упрощения кода со значениями для border-radius
+
 @mixin borderR ($br) {
     border-radius: $br;
 }
 
+// создаем mixin для упрощения кода со значениями для position
+
 @mixin position ($pos) {
     position: $pos;
 }
+
+// создаем mixin для упрощения кода со значениями для регулировки position
 
 @mixin way ($top, $right, $bottom, $left) {
     top: $top;
@@ -33,6 +45,8 @@
     bottom: $bottom;
     left: $left;
 }
+
+// создаем mixin для упрощения кода со значениями для border-bottom
 
 @mixin bb ($bb) {
     border-bottom: $bb;

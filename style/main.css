@@ -1,3 +1,14 @@
+@charset "UTF-8";
+/*переменная для значения в процентах*/
+/*переменная для числового значения*/
+/*переменная для главного цвета*/
+/*переменная для дополнительного цвета*/
+/*переменная для дополнительного цвета*/
+/*переменная для дополнительного цвета*/
+/*переменная для дополнительного цвета*/
+/*переменная для дополнительного цвета*/
+/*переменная для дополнительного шрифта*/
+/*импорт стилей из mixin*/
 .header .wrapper {
   width: 82%;
   margin-top: 0;
@@ -69,6 +80,7 @@
           bottom: 0;
           left: 0; }
 
+/*адаптивность под размер макета*/
 @media screen and (max-width: 1250px) {
   .header .wrapper {
     width: 82%;
@@ -140,6 +152,8 @@
             right: 0;
             bottom: 0;
             left: 0; } }
+/*импорт стилей из header*/
+/*импорт стилей из mixin*/
 .footer {
   padding-top: 2%;
   padding-right: 0;
@@ -150,6 +164,7 @@
     font-size: 1.5rem;
     color: #6c6c6c; }
 
+/*адаптивность под размер макета*/
 @media screen and (max-width: 1250px) {
   .footer {
     padding-top: 2%;
@@ -160,6 +175,9 @@
     .footer .wrapper .author {
       font-size: .9594rem;
       color: #6c6c6c; } }
+/*импорт стилей из footer*/
+/*импорт стилей из mixin*/
+/*подключение локального шрифта*/
 @font-face {
   font-family: MYRIADPRO-REGULAR;
   src: url(../materials/MYRIADPRO-REGULAR.OTF); }
@@ -329,6 +347,7 @@
           color: #6c6c6c;
           line-height: 3rem; }
 
+/*адаптивность под размер макета*/
 @media screen and (max-width: 1250px) {
   .slider {
     background-image: url(../images/bg.png);

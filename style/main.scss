@@ -1,16 +1,18 @@
-$sizePercent: 100%;
-$size: 100;
-$mainColor: #000;
-$primaryColor: #5094f2;
-$secondaryColor: #6c6c6c;
-$specialyColor: #d94748;
-$otherColor: #ebbb11;
-$addColor: #fff;
-$uniqueFont: 'Source Sans Pro', sans-serif;
+$sizePercent: 100%; /*переменная для значения в процентах*/
+$size: 100; /*переменная для числового значения*/
+$mainColor: #000; /*переменная для главного цвета*/
+$primaryColor: #5094f2; /*переменная для дополнительного цвета*/
+$secondaryColor: #6c6c6c; /*переменная для дополнительного цвета*/
+$specialyColor: #d94748; /*переменная для дополнительного цвета*/
+$otherColor: #ebbb11; /*переменная для дополнительного цвета*/
+$addColor: #fff; /*переменная для дополнительного цвета*/
+$uniqueFont: 'Source Sans Pro', sans-serif; /*переменная для дополнительного шрифта*/
 
-@import 'header'; 
-@import 'footer'; 
-@import 'mixin';
+@import 'header'; /*импорт стилей из header*/
+@import 'footer'; /*импорт стилей из footer*/
+@import 'mixin'; /*импорт стилей из mixin*/
+
+/*подключение локального шрифта*/
 
 @font-face {
     font-family: MYRIADPRO-REGULAR;
@@ -170,7 +172,7 @@ $uniqueFont: 'Source Sans Pro', sans-serif;
     }
 }
 
-
+/*адаптивность под размер макета*/
 
 @media screen and (max-width: 1250px){
     .slider {

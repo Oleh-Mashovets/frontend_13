@@ -1,4 +1,4 @@
-@import 'mixin';
+@import 'mixin'; /*импорт стилей из mixin*/
 
 .footer {
     @include setPadding(2%, 0, 3%, 0);
@@ -13,7 +13,7 @@
     }
 }
 
-
+/*адаптивность под размер макета*/
 
 @media screen and (max-width: 1250px) {
     .footer {
