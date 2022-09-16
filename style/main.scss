@@ -68,3 +68,57 @@ $uniqueFont: 'Source Sans Pro', sans-serif;
         }
     }
 }
+
+.services {
+    @include setPadding(4%, 0, 6%, 0);
+
+    .wrapper {
+        width: $sizePercent - 20% + 2;
+        @include setMargin(0, auto, 0, auto);
+        @include setPadding(0, 2%, 0, 2%);
+
+        .services__blocks {
+            @include setFlex(flex, row, space-between, flex-start);
+            text-align: center;
+
+            .services__item {
+                width: $sizePercent/3;
+
+                .fa-solid {
+                    width: $size * 2 - 15 + px;
+                    height: $size * 2 - 15 + px;
+                    @include setFlex(flex, row, center, center);
+                    @include setMargin(0, auto, 7%, auto);
+                    @include borderR($size + px);
+                    font-size: $size / 20 + rem;
+                    color: $addColor;
+                }
+
+                .fa-pen-clip {
+                    background-color: $primaryColor;
+                }
+
+                .fa-desktop {
+                    background-color: $specialyColor;
+                }
+
+                .fa-basket-shopping {
+                    background-color: $otherColor;
+                }
+
+                .services__title {
+                    font-size: 2rem;
+                    color: $primaryColor;
+                    @include setMargin(0, 0, 2%, 0);
+                }
+
+                .services__content {
+                    width: $sizePercent / 1.2;
+                    @include setMargin(0, auto, 0, auto);
+                    font-size: 1.5rem;
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+}
