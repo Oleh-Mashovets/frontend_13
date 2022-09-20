@@ -79,6 +79,8 @@
           right: 0;
           bottom: 0;
           left: 0; }
+        .header .wrapper .nav .menu .menu__list .active:before {
+          display: block; }
 
 /*адаптивность под размер макета*/
 @media screen and (max-width: 1250px) {
@@ -224,7 +226,7 @@
           margin-right: 0;
           margin-bottom: 0;
           margin-left: 2%;
-          width: 27.7777777778%;
+          width: 33.3333333333%;
           display: flex;
           flex-direction: row;
           justify-content: space-around;
@@ -392,16 +394,16 @@
             margin-right: 0;
             margin-bottom: 0;
             margin-left: 2%;
-            width: 29.4117647059%;
+            width: 40%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
             background-color: #5094f2;
             padding-top: 1.5%;
-            padding-right: 1.5%;
+            padding-right: 2%;
             padding-bottom: 1.5%;
-            padding-left: 1.5%;
+            padding-left: 2%;
             font-size: 1.3969rem;
             color: #fff; }
             .slider .wrapper .slider__blocks .slider__item .sign:hover {
@@ -444,7 +446,10 @@
             margin-left: auto;
             border-radius: 100px;
             font-size: 5rem;
-            color: #fff; }
+            color: #fff;
+            transition: 0.8s ease-in-out; }
+            .services .wrapper .services__blocks .services__item .fa-solid:hover {
+              transform: rotateY(360deg); }
           .services .wrapper .services__blocks .services__item .fa-pen-clip {
             background-color: #5094f2; }
           .services .wrapper .services__blocks .services__item .fa-desktop {
