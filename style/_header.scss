@@ -38,7 +38,7 @@
                 .menu__list {
                     font-size: 1.5rem;
 
-                    .menu__link{
+                    .menu__link {
                         color: $secondaryColor;
                         @include position(relative);
 
@@ -49,6 +49,16 @@
 
                     .menu__link:before {
                         display: none;
+                        content: "";
+                        width: $sizePercent;
+                        height: $size / 50 + 3 + px;
+                        background-color: $primaryColor;
+                        @include position(absolute);
+                        @include way($size/2+6+px, 0, 0, 0);
+                    }
+
+                    .menu__link:before:nth-child(odd) {
+                        display: block;
                         content: "";
                         width: $sizePercent;
                         height: $size / 50 + 3 + px;

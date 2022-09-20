@@ -54,7 +54,7 @@ $uniqueFont: 'Source Sans Pro', sans-serif; /*переменная для доп
 
                 .sign {
                     @include setMargin(0, 0, 0, 2%);
-                    width: $sizePercent / 3.6;
+                    width: $sizePercent / 3;
                     @include setFlex(flex, row, space-around, center);
                     background-color: $primaryColor;
                     @include setPadding(1.5%, 1.5%, 1.5%, 1.5%);
@@ -210,7 +210,7 @@ $uniqueFont: 'Source Sans Pro', sans-serif; /*переменная для доп
     
                     .sign {
                         @include setMargin(0, 0, 0, 2%);
-                        width: $sizePercent / 3.4;
+                        width: $sizePercent / 3;
                         @include setFlex(flex, row, space-around, center);
                         background-color: $primaryColor;
                         @include setPadding(1.5%, 1.5%, 1.5%, 1.5%);
