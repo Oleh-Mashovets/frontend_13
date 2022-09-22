@@ -265,7 +265,7 @@
       text-align: center; }
       .services .wrapper .services__blocks .services__item {
         width: 33.3333333333%; }
-        .services .wrapper .services__blocks .services__item .fa-solid {
+        .services .wrapper .services__blocks .services__item .item__icon {
           width: 185px;
           height: 185px;
           display: flex;
@@ -277,13 +277,21 @@
           margin-bottom: 7%;
           margin-left: auto;
           border-radius: 100px;
-          font-size: 5rem;
-          color: #fff; }
-        .services .wrapper .services__blocks .services__item .fa-pen-clip {
-          background-color: #5094f2; }
-        .services .wrapper .services__blocks .services__item .fa-desktop {
+          background-color: #5094f2;
+          transition: 0.8s ease-in-out; }
+          .services .wrapper .services__blocks .services__item .item__icon:hover {
+            transform: rotate(360deg); }
+          .services .wrapper .services__blocks .services__item .item__icon .fa-solid {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+            color: #fff; }
+        .services .wrapper .services__blocks .services__item .item__icon--primary {
           background-color: #d94748; }
-        .services .wrapper .services__blocks .services__item .fa-basket-shopping {
+        .services .wrapper .services__blocks .services__item .item__icon--secondary {
           background-color: #ebbb11; }
         .services .wrapper .services__blocks .services__item .services__title {
           font-size: 2rem;
@@ -432,8 +440,10 @@
         align-items: flex-start;
         text-align: center; }
         .services .wrapper .services__blocks .services__item {
-          width: 33.3333333333%; }
+          width: 33.3333333333%;
+          transition: 0.8s ease-in-out; }
           .services .wrapper .services__blocks .services__item .fa-solid {
+            display: block;
             width: 185px;
             height: 185px;
             display: flex;
@@ -446,12 +456,12 @@
             margin-left: auto;
             border-radius: 100px;
             font-size: 5rem;
-            color: #fff;
-            transition: 0.8s ease-in-out; }
-            .services .wrapper .services__blocks .services__item .fa-solid:hover {
-              transform: rotateY(360deg); }
+            color: #fff; }
           .services .wrapper .services__blocks .services__item .fa-pen-clip {
             background-color: #5094f2; }
+            .services .wrapper .services__blocks .services__item .fa-pen-clip:hover {
+              background-color: #fff;
+              transform: rotateY(50deg); }
           .services .wrapper .services__blocks .services__item .fa-desktop {
             background-color: #d94748; }
           .services .wrapper .services__blocks .services__item .fa-basket-shopping {

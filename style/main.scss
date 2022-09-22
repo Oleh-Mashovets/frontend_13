@@ -86,25 +86,32 @@ $uniqueFont: 'Source Sans Pro', sans-serif; /*переменная для доп
             .services__item {
                 width: $sizePercent/3;
 
-                .fa-solid {
+                .item__icon {
                     width: $size * 2 - 15 + px;
                     height: $size * 2 - 15 + px;
                     @include setFlex(flex, row, center, center);
                     @include setMargin(0, auto, 7%, auto);
                     @include borderR($size + px);
-                    font-size: $size / 20 + rem;
-                    color: $addColor;
-                }
-
-                .fa-pen-clip {
                     background-color: $primaryColor;
+                    transition: 0.8s ease-in-out;
+
+                    &:hover {
+                        transform: rotate(360deg);
+                    }
+
+                    .fa-solid {
+                        width: $sizePercent;
+                        @include setFlex(flex, row, center, center);
+                        font-size: $size / 20 + rem;
+                        color: $addColor;
+                    }
                 }
 
-                .fa-desktop {
+                .item__icon--primary {
                     background-color: $specialyColor;
                 }
 
-                .fa-basket-shopping {
+                .item__icon--secondary {
                     background-color: $otherColor;
                 }
 
@@ -241,8 +248,10 @@ $uniqueFont: 'Source Sans Pro', sans-serif; /*переменная для доп
     
                 .services__item {
                     width: $sizePercent/3;
+                    transition: 0.8s ease-in-out;
     
                     .fa-solid {
+                        display: block;
                         width: $size * 2 - 15 + px;
                         height: $size * 2 - 15 + px;
                         @include setFlex(flex, row, center, center);
@@ -250,15 +259,15 @@ $uniqueFont: 'Source Sans Pro', sans-serif; /*переменная для доп
                         @include borderR($size + px);
                         font-size: $size / 20 + rem;
                         color: $addColor;
-                        transition: 0.8s ease-in-out;
-
-                        &:hover {
-                            transform: rotateY(360deg);
-                        }
                     }
     
                     .fa-pen-clip {
                         background-color: $primaryColor;
+
+                        &:hover {
+                            background-color: #fff;
+                            transform: rotateY(50deg);
+                        }
                     }
     
                     .fa-desktop {
