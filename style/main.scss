@@ -96,7 +96,7 @@ $uniqueFont: 'Source Sans Pro', sans-serif; /*переменная для доп
                     transition: 0.8s ease-in-out;
 
                     &:hover {
-                        transform: rotate(360deg);
+                        transform: rotateY(360deg);
                     }
 
                     .fa-solid {

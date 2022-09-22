@@ -280,7 +280,7 @@
           background-color: #5094f2;
           transition: 0.8s ease-in-out; }
           .services .wrapper .services__blocks .services__item .item__icon:hover {
-            transform: rotate(360deg); }
+            transform: rotateY(360deg); }
           .services .wrapper .services__blocks .services__item .item__icon .fa-solid {
             width: 100%;
             display: flex;
